@@ -42,7 +42,7 @@ AVRDUDE = avrdude -c usbtiny -p $(DEVICE)
 
 OBJS = ${SRCS:.c=.o}
 INCLUDES = -I. -I../../../../mrbus/mrbus/src -I../../../../mrbus/libs/avr-i2c
-CFLAGS  = $(INCLUDES) -Wall -Os
+CFLAGS  = $(INCLUDES) --std=gnu99 -Wall -Os
 
 COMPILE = avr-gcc $(DEFINES) -DF_CPU=$(F_CPU) $(CFLAGS) -mmcu=$(DEVICE)
 

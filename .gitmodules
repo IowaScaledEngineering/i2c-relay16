@@ -1,0 +1,3 @@
+[submodule "test/avr-i2c"]
+	path = test/avr-i2c
+	url = https://github.com/IowaScaledEngineering/avr-i2c.git

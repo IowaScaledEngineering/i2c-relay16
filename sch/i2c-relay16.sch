@@ -454,7 +454,7 @@ device=HEADER3
 T 45800 51700 5 10 1 1 0 6 1
 refdes=J6
 T 46200 50400 5 10 0 0 0 0 1
-footprint=JUMPER3
+footprint=JUMPER3-OFFSET
 }
 C 46200 48700 1 0 1 header3-1.sym
 {
@@ -463,7 +463,7 @@ device=HEADER3
 T 45800 50000 5 10 1 1 0 6 1
 refdes=J7
 T 46200 48700 5 10 0 0 0 0 1
-footprint=JUMPER3
+footprint=JUMPER3-OFFSET
 }
 C 46200 52100 1 0 1 header3-1.sym
 {
@@ -472,7 +472,7 @@ device=HEADER3
 T 45800 53400 5 10 1 1 0 6 1
 refdes=J5
 T 46200 52100 5 10 0 0 0 0 1
-footprint=JUMPER3
+footprint=JUMPER3-OFFSET
 }
 C 46300 52000 1 0 1 gnd-1.sym
 C 46300 50300 1 0 1 gnd-1.sym

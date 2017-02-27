@@ -894,7 +894,7 @@ Element["" "TSSOP24" "U1" "unknown" 940.00mil 635.00mil 180.00mil -155.00mil 0 1
 
 	)
 
-Element["" "0805" "R2" "1M" 1435.00mil 910.00mil 45.00mil 50.00mil 0 100 ""]
+Element["" "0805" "R2" "DNI" 1435.00mil 910.00mil 45.00mil 50.00mil 0 100 ""]
 (
 	Pad[-3.93mil 35.43mil 3.93mil 35.43mil 51.18mil 20.00mil 57.18mil "1" "1" "square"]
 	Pad[-3.93mil -35.43mil 3.93mil -35.43mil 51.18mil 0.0000 57.18mil "2" "2" "square"]
@@ -1357,6 +1357,12 @@ Layer(3 "outline")
 Layer(4 "silk")
 (
 	Line[2925.00mil 5.00mil 2925.00mil 805.00mil 10.00mil 20.00mil "clearline"]
+	Text[95.00mil 905.00mil 3 78 "GND" "clearline,onsolder"]
+	Text[195.00mil 905.00mil 3 78 "SDA" "clearline,onsolder"]
+	Text[410.00mil 950.00mil 2 78 "/OE" "clearline,onsolder"]
+	Text[2075.00mil 905.00mil 3 78 "SCL" "clearline,onsolder"]
+	Text[2175.00mil 905.00mil 3 78 "/INT" "clearline,onsolder"]
+	Text[1890.00mil 950.00mil 2 78 "/IORST" "clearline,onsolder"]
 )
 Layer(5 "silk")
 (

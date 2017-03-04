@@ -144,7 +144,7 @@ int main(void)
 			writeRelay16(0x42, b[i]);
 			writeRelay16(0x44, c[i]);
 			writeRelay16(0x48, d[i]);
-			_delay_ms(250);
+			_delay_ms(100);
 		}
 	}
 }

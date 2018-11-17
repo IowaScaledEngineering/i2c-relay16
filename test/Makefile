@@ -31,14 +31,14 @@ DEVICE  = atmega328
 F_CPU   = 20000000  # Hz
 FUSE_L  = 0xD7
 FUSE_H  = 0xD4
-FUSE_E  = 0x00
+FUSE_E  = 0xFC
 
 # MRBus
 DEFINES = -DMRBUS -DSWREV=0 -DHWREV_MAJOR=1 -DHWREV_MINOR=0 #-DTIME_TX
 SRCS = $(BASE_NAME).c ./avr-i2c/avr-i2c-master.c
 INCS = ./avr-i2c/avr-i2c-master.h
 
-AVRDUDE = avrdude -c usbtiny -p $(DEVICE)
+AVRDUDE = avrdude -c iseavrprog -p $(DEVICE)
 
 OBJS = ${SRCS:.c=.o}
 INCLUDES = -I. -I./avr-i2c

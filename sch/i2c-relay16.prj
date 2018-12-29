@@ -1,6 +1,6 @@
 schematics i2c-relay16.sch
 output-name ../pcb/i2c-relay16
 skip-m4
-elements-dir ../../../footprints
+elements-dir ../../ise-footprints
 
 

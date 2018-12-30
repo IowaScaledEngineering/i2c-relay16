@@ -1,0 +1,6 @@
+schematics i2c-relay16-qwiic.sch
+output-name ../pcb/i2c-relay16-qwiic
+skip-m4
+elements-dir ../../ise-footprints
+
+

@@ -1,0 +1,6 @@
+schematics test-relay16.sch
+output-name ../pcb/test-relay16
+skip-m4
+elements-dir ../../../footprints
+
+

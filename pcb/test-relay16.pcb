@@ -1875,8 +1875,8 @@ Layer(5 "silk")
 	Line[1765.00mil 205.00mil 1765.00mil 235.00mil 10.00mil 20.00mil "clearline"]
 	Line[2230.00mil 220.00mil 2260.00mil 220.00mil 10.00mil 20.00mil "clearline"]
 	Line[2245.00mil 205.00mil 2245.00mil 235.00mil 10.00mil 20.00mil "clearline"]
-	Text[1555.00mil 1355.00mil 0 119 "TEST-RELAY16" "clearline"]
-	Text[1555.00mil 1435.00mil 0 119 "CC BY-SA (C)2020" "clearline"]
+	Text[1525.00mil 1420.00mil 0 119 "TEST-RELAY16 v1.0" "clearline"]
+	Text[1525.00mil 1500.00mil 0 119 "CC BY-SA (C)2020" "clearline"]
 )
 NetList()
 (

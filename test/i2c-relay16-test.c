@@ -129,12 +129,18 @@ int main(void)
 	
 	i2c_master_init();
 
-	DDRB |= _BV(PB0);
-	PORTB |= _BV(PB0);  // Enable I2C (/IORST)
+	DDRB &= 0xFF;
+	DDRD &= 0xFF;
+
+	PORTB &= 0xFF;
+	PORTD &= 0xFF;
+	
+	DDRC |= 0x0F;
 
 	sei();	
 
 	uint8_t i;
+	uint16_t output;
 
 	while (1)
 	{
@@ -144,6 +150,41 @@ int main(void)
 			writeRelay16(0x42, b[i]);
 			writeRelay16(0x44, c[i]);
 			writeRelay16(0x48, d[i]);
+			
+			output = ~( ((uint16_t)PIND << 8) + PINB);
+
+			if(a[i] == output)
+			{
+				PORTC |= _BV(PC0);
+				PORTC &= ~_BV(PC1);
+				PORTC &= ~_BV(PC2);
+				PORTC &= ~_BV(PC3);
+			}
+
+			if(b[i] == output)
+			{
+				PORTC &= ~_BV(PC0);
+				PORTC |= _BV(PC1);
+				PORTC &= ~_BV(PC2);
+				PORTC &= ~_BV(PC3);
+			}
+
+			if(c[i] == output)
+			{
+				PORTC &= ~_BV(PC0);
+				PORTC &= ~_BV(PC1);
+				PORTC |= _BV(PC2);
+				PORTC &= ~_BV(PC3);
+			}
+			
+			if(d[i] == output)
+			{
+				PORTC &= ~_BV(PC0);
+				PORTC &= ~_BV(PC1);
+				PORTC &= ~_BV(PC2);
+				PORTC |= _BV(PC3);
+			}
+			
 			_delay_ms(100);
 		}
 	}

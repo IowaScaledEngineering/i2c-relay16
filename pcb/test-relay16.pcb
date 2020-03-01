@@ -801,13 +801,6 @@ Via[480.00mil 520.00mil 26.00mil 20.00mil 0.0000 12.00mil "" "thermal(0S,1S)"]
 Via[480.00mil 560.00mil 26.00mil 20.00mil 0.0000 12.00mil "" "thermal(0S,1S)"]
 Via[200.00mil 725.00mil 26.00mil 20.00mil 0.0000 12.00mil "" "thermal(1S)"]
 Via[200.00mil 965.00mil 26.00mil 20.00mil 0.0000 12.00mil "" "thermal(1S)"]
-Via[685.00mil 110.00mil 26.00mil 20.00mil 0.0000 12.00mil "" "thermal(1S)"]
-Via[925.00mil 110.00mil 26.00mil 20.00mil 0.0000 12.00mil "" "thermal(1S)"]
-Via[1165.00mil 110.00mil 26.00mil 20.00mil 0.0000 12.00mil "" "thermal(1S)"]
-Via[1405.00mil 110.00mil 26.00mil 20.00mil 0.0000 12.00mil "" "thermal(1S)"]
-Via[1645.00mil 110.00mil 26.00mil 20.00mil 0.0000 12.00mil "" "thermal(1S)"]
-Via[1885.00mil 110.00mil 26.00mil 20.00mil 0.0000 12.00mil "" "thermal(1S)"]
-Via[2125.00mil 110.00mil 26.00mil 20.00mil 0.0000 12.00mil "" "thermal(1S)"]
 Via[920.00mil 580.00mil 26.00mil 20.00mil 0.0000 12.00mil "" ""]
 Via[960.00mil 580.00mil 26.00mil 20.00mil 0.0000 12.00mil "" ""]
 Via[1000.00mil 580.00mil 26.00mil 20.00mil 0.0000 12.00mil "" ""]
@@ -897,10 +890,10 @@ Via[2430.00mil 1565.00mil 26.00mil 20.00mil 0.0000 12.00mil "" "thermal(0S,1S)"]
 Via[2465.00mil 1495.00mil 26.00mil 20.00mil 0.0000 12.00mil "" "thermal(0S,1S)"]
 Via[2465.00mil 1530.00mil 26.00mil 20.00mil 0.0000 12.00mil "" "thermal(0S,1S)"]
 Via[2465.00mil 1565.00mil 26.00mil 20.00mil 0.0000 12.00mil "" "thermal(0S,1S)"]
-Via[2250.00mil 30.00mil 26.00mil 20.00mil 0.0000 12.00mil "" "thermal(1S)"]
-Via[2250.00mil 60.00mil 26.00mil 20.00mil 0.0000 12.00mil "" "thermal(1S)"]
-Via[2365.00mil 30.00mil 26.00mil 20.00mil 0.0000 12.00mil "" "thermal(1S)"]
-Via[2365.00mil 60.00mil 26.00mil 20.00mil 0.0000 12.00mil "" "thermal(1S)"]
+Via[2250.00mil 30.00mil 26.00mil 20.00mil 0.0000 12.00mil "" "thermal(0S,1S)"]
+Via[2250.00mil 60.00mil 26.00mil 20.00mil 0.0000 12.00mil "" "thermal(0S,1S)"]
+Via[2365.00mil 30.00mil 26.00mil 20.00mil 0.0000 12.00mil "" "thermal(0S,1S)"]
+Via[2365.00mil 60.00mil 26.00mil 20.00mil 0.0000 12.00mil "" "thermal(0S,1S)"]
 Via[200.00mil 845.00mil 26.00mil 20.00mil 0.0000 12.00mil "" "thermal(1S)"]
 Via[880.00mil 500.00mil 26.00mil 20.00mil 0.0000 12.00mil "" ""]
 
@@ -1449,7 +1442,6 @@ Layer(1 "top")
 	Line[20.8471mm 274.25mil 20.8471mm 331.52mil 10.00mil 20.00mil "clearline"]
 	Line[20.8471mm 274.25mil 865.00mil 230.00mil 10.00mil 20.00mil "clearline"]
 	Line[865.00mil 180.43mil 865.00mil 230.00mil 10.00mil 20.00mil "clearline"]
-	Line[2425.00mil 109.57mil 625.00mil 109.57mil 25.00mil 20.00mil "clearline"]
 	Line[31.4391mm 331.52mil 31.4391mm 7.0551mm 10.00mil 20.00mil "clearline"]
 	Line[31.4391mm 7.0551mm 1215.00mil 255.00mil 10.00mil 20.00mil "clearline"]
 	Line[1215.00mil 255.00mil 1135.00mil 255.00mil 10.00mil 20.00mil "clearline"]
@@ -1661,7 +1653,6 @@ Layer(1 "top")
 	Line[630.00mil 490.00mil 630.00mil 305.00mil 60.00mil 20.00mil ""]
 	Line[630.00mil 305.00mil 550.00mil 225.00mil 60.00mil 20.00mil "clearline"]
 	Line[550.00mil 225.00mil 550.00mil 45.00mil 60.00mil 20.00mil "clearline"]
-	Line[550.00mil 45.00mil 2455.00mil 45.00mil 60.00mil 20.00mil ""]
 	Line[789.25mil 12.9350mm 810.00mil 530.00mil 10.00mil 20.00mil "clearline"]
 	Line[810.00mil 530.00mil 905.00mil 530.00mil 10.00mil 20.00mil "clearline"]
 	Line[905.00mil 530.00mil 920.00mil 545.00mil 10.00mil 20.00mil "clearline"]
@@ -1713,15 +1704,15 @@ Layer(1 "top")
 	)
 	Polygon("clearpoly")
 	(
-		[2485.00mil 15.00mil] [2195.00mil 15.00mil] [2195.00mil 75.00mil] [2485.00mil 75.00mil] 
-	)
-	Polygon("clearpoly")
-	(
 		[15.00mil 545.00mil] [390.00mil 545.00mil] [390.00mil 370.00mil] [15.00mil 370.00mil] 
 	)
 	Polygon("clearpoly")
 	(
 		[15.00mil 15.00mil] [300.00mil 15.00mil] [300.00mil 545.00mil] [15.00mil 545.00mil] 
+	)
+	Polygon("")
+	(
+		[520.00mil 15.00mil] [2485.00mil 15.00mil] [2485.00mil 135.00mil] [520.00mil 135.00mil] 
 	)
 )
 Layer(2 "bottom")
@@ -1867,15 +1858,15 @@ Layer(5 "silk")
 	Line[5.00mil 1595.00mil 5.00mil 5.00mil 10.00mil 20.00mil "clearline"]
 	Line[300.00mil 845.00mil 330.00mil 845.00mil 10.00mil 20.00mil "clearline"]
 	Line[315.00mil 830.00mil 315.00mil 860.00mil 10.00mil 20.00mil "clearline"]
-	Line[790.00mil 220.00mil 820.00mil 220.00mil 10.00mil 20.00mil "clearline"]
-	Line[805.00mil 205.00mil 805.00mil 235.00mil 10.00mil 20.00mil "clearline"]
-	Line[1270.00mil 220.00mil 1300.00mil 220.00mil 10.00mil 20.00mil "clearline"]
-	Line[1285.00mil 205.00mil 1285.00mil 235.00mil 10.00mil 20.00mil "clearline"]
-	Line[1750.00mil 220.00mil 1780.00mil 220.00mil 10.00mil 20.00mil "clearline"]
-	Line[1765.00mil 205.00mil 1765.00mil 235.00mil 10.00mil 20.00mil "clearline"]
-	Line[2230.00mil 220.00mil 2260.00mil 220.00mil 10.00mil 20.00mil "clearline"]
-	Line[2245.00mil 205.00mil 2245.00mil 235.00mil 10.00mil 20.00mil "clearline"]
-	Text[1525.00mil 1420.00mil 0 119 "TEST-RELAY16 v1.0" "clearline"]
+	Line[790.00mil 110.00mil 820.00mil 110.00mil 10.00mil 20.00mil "clearline"]
+	Line[805.00mil 95.00mil 805.00mil 125.00mil 10.00mil 20.00mil "clearline"]
+	Line[1270.00mil 110.00mil 1300.00mil 110.00mil 10.00mil 20.00mil "clearline"]
+	Line[1285.00mil 95.00mil 1285.00mil 125.00mil 10.00mil 20.00mil "clearline"]
+	Line[1750.00mil 110.00mil 1780.00mil 110.00mil 10.00mil 20.00mil "clearline"]
+	Line[1765.00mil 95.00mil 1765.00mil 125.00mil 10.00mil 20.00mil "clearline"]
+	Line[2230.00mil 110.00mil 2260.00mil 110.00mil 10.00mil 20.00mil "clearline"]
+	Line[2245.00mil 95.00mil 2245.00mil 125.00mil 10.00mil 20.00mil "clearline"]
+	Text[1525.00mil 1420.00mil 0 119 "TEST-RELAY16 v1.1" "clearline"]
 	Text[1525.00mil 1500.00mil 0 119 "CC BY-SA (C)2020" "clearline"]
 )
 NetList()
@@ -1885,6 +1876,22 @@ NetList()
 		Connect("C1-1")
 		Connect("C2-1")
 		Connect("C3-1")
+		Connect("D1-1")
+		Connect("D2-1")
+		Connect("D3-1")
+		Connect("D4-1")
+		Connect("D5-1")
+		Connect("D6-1")
+		Connect("D7-1")
+		Connect("D8-1")
+		Connect("D9-1")
+		Connect("D10-1")
+		Connect("D11-1")
+		Connect("D12-1")
+		Connect("D13-1")
+		Connect("D14-1")
+		Connect("D15-1")
+		Connect("D16-1")
 		Connect("J2-19")
 		Connect("J2-20")
 		Connect("J3-2")
@@ -1931,22 +1938,6 @@ NetList()
 		Connect("C2-2")
 		Connect("C3-2")
 		Connect("C4-2")
-		Connect("D1-1")
-		Connect("D2-1")
-		Connect("D3-1")
-		Connect("D4-1")
-		Connect("D5-1")
-		Connect("D6-1")
-		Connect("D7-1")
-		Connect("D8-1")
-		Connect("D9-1")
-		Connect("D10-1")
-		Connect("D11-1")
-		Connect("D12-1")
-		Connect("D13-1")
-		Connect("D14-1")
-		Connect("D15-1")
-		Connect("D16-1")
 		Connect("D17-1")
 		Connect("D18-1")
 		Connect("D19-1")

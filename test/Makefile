@@ -27,9 +27,9 @@
 
 BASE_NAME = i2c-relay16-test
 
-DEVICE  = atmega328
+DEVICE  = atmega328p
 F_CPU   = 20000000  # Hz
-FUSE_L  = 0xD7
+FUSE_L  = 0xE2
 FUSE_H  = 0xD4
 FUSE_E  = 0xFC
 
@@ -71,7 +71,7 @@ setup:
 fuse:
 	@[ "$(FUSE_H)" != "" -a "$(FUSE_L)" != "" -a "$(FUSE_E)" != "" ] || \
 		{ echo "*** Invalid Fuse values."; exit 1; }
-	$(AVRDUDE) -U hfuse:w:$(FUSE_H):m -U lfuse:w:$(FUSE_L):m -U efuse:w:$(FUSE_E):m
+	$(AVRDUDE) -B 32 -U hfuse:w:$(FUSE_H):m -U lfuse:w:$(FUSE_L):m -U efuse:w:$(FUSE_E):m
 
 read:
 	$(AVRDUDE) -v

@@ -227,7 +227,7 @@ netname=SCL
 N 46500 51500 46500 51700 4
 T 42700 51100 9 10 1 0 0 0 1
 ICSP Header
-N 52800 51500 44100 51500 4
+N 44100 51500 53100 51500 4
 C 45700 44600 1 0 0 ATmega328-tqfp32.sym
 {
 T 50200 51100 5 10 1 1 0 6 1
@@ -990,3 +990,12 @@ C 40400 53400 1 0 0 5V-plus-1.sym
 N 40600 53400 40600 53200 4
 T 41600 52800 9 10 1 0 0 0 1
 NOTE: LEDs are drawn backwards.  They were left this way to avoid flipping them in layout from v1.0 -> v1.1.
+C 53100 51600 1 270 0 testpt-1.sym
+{
+T 54000 51200 5 10 0 0 270 0 1
+device=TESTPOINT
+T 53800 51200 5 10 0 0 270 0 1
+footprint=TURRET
+T 53550 51500 5 10 1 1 0 1 1
+refdes=5V
+}

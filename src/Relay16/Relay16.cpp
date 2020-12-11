@@ -90,3 +90,19 @@ void Relay16::begin(boolean j5, boolean j6, boolean j7, char dioResetPin)
 	this->allOff();
 }
 
+void Relay16::begin(uint8_t address, char dioResetPin)
+{
+	this->addr = address;
+	
+	// If there's a DIO pin assigned to reset, use it to do a hardware reset on initialization
+	if (-1 != dioResetPin)
+	{
+		pinMode(dioResetPin, OUTPUT);
+		digitalWrite(dioResetPin, LOW);
+		delayMicroseconds(100);
+		digitalWrite(dioResetPin, HIGH);
+	}
+	
+	this->allOff();
+}
+

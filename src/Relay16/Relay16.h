@@ -33,6 +33,7 @@ class Relay16
 	public:
 		Relay16();
 		void begin(boolean j5, boolean j6, boolean j7, char dioReset);
+		void begin(uint8_t address, char dioReset);
 		void relayOn(byte relayNum);
 		void relayOff(byte relayNum);
 		void allOff();
